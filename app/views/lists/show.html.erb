@@ -1,4 +1,4 @@
-<div class="list-banner">
+<div class="list-banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @list.photo.attached? ? @list.photo.key : "https://res.cloudinary.com/wvala/image/upload/v1653656942/cld-sample.jpg", width: 1145, crop: :fill %>')">
   <h1><%= @list.name %></h1>
     <p>I heckin love <%= @list.name.downcase %> movies</p>
     <%= link_to "Add a bookmark", new_list_bookmark_path(@list) %>
