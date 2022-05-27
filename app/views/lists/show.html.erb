@@ -11,7 +11,8 @@
         <p><%= bookmark.movie.title %> - Rating: <%= bookmark.movie.rating %></p>
         <%= image_tag bookmark.movie.poster_url, alt: "Movie Poster", width: 200 %>
         <p>Overview: <%= bookmark.movie.overview %></p>
-        <p>Comment: <%= bookmark.comment %> | <%= link_to "delete bookmark", bookmark_path(bookmark), method: :delete %></p>
+        <p>Comment: <%= bookmark.comment %></p>
+        <p><%= link_to "delete bookmark", bookmark_path(bookmark), method: :delete %></p>
       </div>
     <% end %>
   </div>
