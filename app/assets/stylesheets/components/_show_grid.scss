@@ -1,0 +1,8 @@
+.show-grid {
+  width: 500px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  justify-content: center;
+}
